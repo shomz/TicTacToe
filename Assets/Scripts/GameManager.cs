@@ -135,10 +135,11 @@ public class GameManager : Singleton<GameManager>
         else
         {
             AudioController.PlayMove();
-            CurrentPlayer = CurrentPlayer == CellType.X ?
-                CellType.O :
-                CellType.X;
         }
+
+        CurrentPlayer = CurrentPlayer == CellType.X ?
+            CellType.O :
+            CellType.X;
 
         return true;
     }
